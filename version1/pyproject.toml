@@ -1,0 +1,22 @@
+[tool.poetry]
+name = "version1"
+version = "0.1.0"
+description = ""
+authors = ["nvidia <winnerineast@gmail.com>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.11"
+streamlit = "^1.37.1"
+pypdf2 = "^3.0.1"
+langchain = "^0.2.13"
+langchain-community = "^0.2.12"
+python-dotenv = "^1.0.1"
+langchain-anthropic = "^0.1.23"
+langchain-openai = "^0.1.21"
+spacy = "^3.7.5"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
