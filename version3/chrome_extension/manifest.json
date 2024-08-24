@@ -1,0 +1,23 @@
+{
+  "manifest_version": 3,
+  "name": "2nd brain",
+  "version": "1.0",
+  "description": "Enhances web browsing with AI assistance.",
+
+  "permissions": [
+    "activeTab",
+    "storage",
+    "webNavigation"
+  ],
+
+  "background": {
+    "service_worker": "background.js"
+  },
+
+  "content_scripts": [
+    {
+      "matches": ["<all_urls>"],
+      "js": ["content_script.js"]
+    }
+  ]
+}
